@@ -1,0 +1,7 @@
+[build]
+  command = "npm run build"
+  publish = "client/build"
+
+[dev]
+  command = "npm run start"
+  functions = "server"
