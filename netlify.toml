@@ -1,6 +1,6 @@
 # netlify.toml
 [build]
-  command = "(cd client && npm install && npm run build) && npm run build"  # Replace with your build command for Vite
+  command = "npm run build"  # Replace with your build command for Vite
   publish = "client/build"          # Replace with your Vite build directory
 
 [[redirects]]
