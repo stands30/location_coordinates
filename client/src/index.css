@@ -1,0 +1,14 @@
+
+  .chart-body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  } 
+  
+.chart-container{
+    width: 70%;
+  }
+  .chart-form{
+    width: 100%;
+    justify-items: center;
+  }
