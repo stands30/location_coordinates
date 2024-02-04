@@ -1,5 +1,9 @@
 # netlify.toml
 [build]
   command = "(cd client && npm install && npm run build) && npm run build"  # Replace with your build command for Vite
-  publish = "client/dist"
+  publish = "client/build"
  
+ [[headers]]
+  for = "/*.mjs"
+  [headers.values]
+    Content-Type = "application/javascript; charset=utf-8"
