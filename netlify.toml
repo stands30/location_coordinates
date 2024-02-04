@@ -1,0 +1,4 @@
+[[headers]]
+  for = "/path/to/your/module.mjs"
+  [headers.values]
+    Content-Type = "application/javascript"
