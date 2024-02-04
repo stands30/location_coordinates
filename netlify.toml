@@ -1,9 +1,5 @@
-
 # netlify.toml
-
 [build]
-  command = "npm run build"  # Adjust this based on your build script
-  publish = "client/dist"    # Adjust this based on your Vite build output
-
-
+  command = "(cd client && npm install) && npm run build"  # Replace with your build command for Vite
+ 
 
