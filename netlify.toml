@@ -2,6 +2,6 @@
 
 [build]
   command = "(cd client && npm install && npm run build) && npm run build"
-  publish = "server/dist"  # Adjust the publish directory based on your setup
+  publish = "client/build"  # Adjust the publish directory based on your setup
 
 # Add other configurations as needed...
