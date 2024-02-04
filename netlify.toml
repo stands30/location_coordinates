@@ -1,7 +1,7 @@
 # netlify.toml
 
 [build]
-  command = "npm run build && (cd client && npm install && npm run build)"
+  command = "(cd client && npm install && npm run build) && npm run build"
   publish = "server/dist"  # Adjust the publish directory based on your setup
 
 # Add other configurations as needed...
