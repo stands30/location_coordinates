@@ -6,7 +6,7 @@
 [[redirects]]
   # Redirect API requests to the server
   from = "/api/*"
-  to = "/.netlify/functions/server/:splat"
+  to = "/.netlify/functions/app/:splat"
   status = 200
 
 [[redirects]]
