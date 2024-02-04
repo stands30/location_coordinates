@@ -1,17 +1,9 @@
+
 # netlify.toml
+
 [build]
-  command = "(cd client && npm install && npm run build) && npm run build"  # Replace with your build command for Vite
-  publish = "client/build"          # Replace with your Vite build directory
+  command = "npm run build"  # Adjust this based on your build script
+  publish = "client/dist"    # Adjust this based on your Vite build output
 
-[[redirects]]
-  # Redirect API requests to the server
-  from = "/api/*"
-  to = "/.netlify/functions/server/:splat"
-  status = 200
 
-[[redirects]]
-  # Redirect all other requests to the Vite app
-  from = "/*"
-  to = "/index.html"
-  status = 200
 
