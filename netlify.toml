@@ -2,6 +2,3 @@
 [build]
   command = "(cd client && npm install) && npm run build"  # Replace with your build command for Vite
  
-
-[[functions]]
-  directory = "."
