@@ -1,8 +1,6 @@
     import axios from 'axios';
-
-    import dotenv from 'dotenv';
-    dotenv.config();
-    console.log('process.env ', import.meta.env, process.env);
+    
+    console.log('process.env ', import.meta);
     const api = axios.create({
     baseURL: import.meta.env.VITE_API_ENDPOINT
     });
