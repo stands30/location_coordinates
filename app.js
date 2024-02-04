@@ -44,7 +44,6 @@ app.get("*", (req, res, next) => {
   );
   next();
 });
-  console.log('serverless(app) ', serverless(app));
-
-
-// module.exports.handler = serverless(app);
+  // console.log('serverless(app) ', serverless(app));
+  
+module.exports.handler = serverless(app);

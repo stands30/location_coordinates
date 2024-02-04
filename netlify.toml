@@ -2,6 +2,14 @@
 [build]
   command = "(cd client && npm install) && npm run build"  # Replace with your build command for Vite
  
+ [[redirects]]
+  # Redirect API requests to the server
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
 
-[[functions]]
-  directory = "."
+[[redirects]]
+  # Redirect all other requests to the Vite app
+  from = "/*"
+  to = "/index.html"
+  status = 200
