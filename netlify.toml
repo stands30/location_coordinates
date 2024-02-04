@@ -3,15 +3,3 @@
   command = "npm run build"  # Replace with your build command for Vite
   publish = "client/build"          # Replace with your Vite build directory
 
-[[redirects]]
-  # Redirect API requests to the server
-  from = "/api/*"
-  to = "/.netlify/functions/app/:splat"
-  status = 200
-
-[[redirects]]
-  # Redirect all other requests to the Vite app
-  from = "/*"
-  to = "/index.html"
-  status = 200
-

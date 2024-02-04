@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 dotenv.config({ path: `../.env` });
 console.log(process.env.PORT);
 const { PORT = 8080 } = process.env.PORT;
+console.log(' PORT ', process.env.PORT);
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
@@ -12,6 +13,7 @@ export default defineConfig({
       '/api': {
         target: `${process.env.API_BASE_URL}`,
         changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
       },
     },
   },
