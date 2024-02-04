@@ -1,7 +1,7 @@
 # netlify.toml
 [build]
-  command = "(cd client && npm install) && npm run build"  # Replace with your build command for Vite
-  
+  command = "npm run build"  # Replace with your build command for Vite
+
  
  [[redirects]]
   # Redirect API requests to the server
