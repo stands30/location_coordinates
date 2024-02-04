@@ -7,6 +7,7 @@ const app = express();
 const mongoose = require("mongoose");
 const path = require("path");
 
+const serverless = require('serverless-http');
 const coordinateRouter = require("./routes/coordinateRouter");
 
 app.use(express.json());
@@ -43,3 +44,7 @@ app.get("*", (req, res, next) => {
   );
   next();
 });
+  console.log('serverless(app) ', serverless(app));
+
+
+// module.exports.handler = serverless(app);
