@@ -1,7 +1,18 @@
-[build]
-  command = "npm run build"
-  publish = "client/build"
+# netlify.toml
 
-[dev]
-  command = "npm run start"
-  functions = "server"
+[build]
+  command = "npm run build"  # Replace with your build command for React frontend
+  publish = "client/build" # Replace with your React build directory
+
+[[redirects]]
+  # Redirect all requests to the server
+  from = "/api/*"
+  to = "/.netlify/functions/server/:splat"
+  status = 200
+
+[[redirects]]
+  # Redirect all other requests to the React app
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
