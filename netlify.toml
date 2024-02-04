@@ -1,4 +1,4 @@
 # netlify.toml
 [build]
-  command = "(cd client && npm install) && npm run build"  # Replace with your build command for Vite
+  command = "(cd client && npm install && npm run build) && npm run build"  # Replace with your build command for Vite
  
